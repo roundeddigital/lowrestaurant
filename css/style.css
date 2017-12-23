@@ -1,0 +1,374 @@
+/*
+Theme Name:   Rounded Digital
+Description:  This website was developed by the team at Rounded Digital. It's been built for speed, flexibility and curb-appeal - all in pursuit of growing your business. We appreciate your business, and we also appreciate the Uncode framework in which this site was contructed.
+Author:       Rounded Digital
+Author URL:   https://roundeddigital.com
+Template:     uncode
+Version:      1.4
+Text Domain:  uncode-child
+*/
+
+/* Write here your own personal stylesheet */
+/* ******************** RD ***
+Uncode Patch: 1. Possible layout issue with Chrome 63 (Equal Height columns)
+*********************** RD *** */
+
+
+/*---------------------------
+open table reservations start
+---------------------------*/
+
+#OT_searchWrapper {
+    /*left: 30px!important;*/
+    left: -80px!important;
+    top: 5px!important;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.0)!important;
+}
+h2.OT_feedTitle {
+  visibility: hidden;
+}
+/* Fonts */
+dl#OT_defList {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 18px;
+  font-weight:bold;
+}
+/* Restaurant label */
+#OT_restaurantLbl {
+  /*text-align: right!important;*/
+  top: 0px!important;
+  width: 80px!important;
+  visibility: hidden;
+}
+/* Restaurant selector */
+#OT_restaurant {
+    top: 0px!important;
+    left: 90px!important;
+    width: 220px;
+}
+/* Party size label */
+#OT_partySizeLbl {
+  text-align: right!important;
+  top: 0px!important;
+  left: 310px!important;
+  width: 80px!important;
+}
+/* Party size selector */
+#OT_partySize {
+  top: 0px!important;
+  left: 400px!important;
+  width: 65px!important;
+}
+/* Date label */
+#OT_dateLbl {
+  text-align: right!important;
+  left: 470px!important;
+  top: 0px!important;
+  width: 40px!important;
+}
+/* Date Selector */
+dd#OT_date {
+  position: absolute;
+  left: 520px;
+  top: 2px!important;
+  width: 230px!important;
+}
+
+/* Time Label */
+#OT_timeLbl {
+  top: -20px!important;
+  left: 660px!important;
+
+}
+/* Time selector */
+dd#OT_time {
+  top: 0px!important;
+  left: 720px!important;
+  width: 100px!important;
+}
+input#submit.OT_TableButton {
+  left: 415px!important;
+  top: -100px!important;
+  padding:10px!important;
+}
+
+p#dateDisplay {
+    position: absolute;
+      left: 12px!important;
+}
+input#submit.OT_TableButton {
+    position: relative;
+    /*left: 415px!important;*/
+    /*top: -105px!important;*/
+    left: 565px!important;
+    top: -158px!important;
+}
+#OT_searchWrapper #startDate, #OT_searchWrapper .OT_feedFormfieldCalendar {
+font-family: Verdana,Arial,Helvetica,Sans-Serif;
+font-size: 12px;
+margin: 0;
+width: 140px!important;
+}
+#OT_searchWrapper #dateDisplay {
+
+float: unset!important;
+
+}
+/*---------------------------
+open table reservations end
+---------------------------*/
+
+@media (min-width: 960px){
+.chrome .col-lg-0,
+.chrome .col-lg-1,
+.chrome .col-lg-2,
+.chrome .col-lg-3,
+.chrome .col-lg-4,
+.chrome .col-lg-5,
+.chrome .col-lg-6,
+.chrome .col-lg-7,
+.chrome .col-lg-8,
+.chrome .col-lg-9,
+.chrome .col-lg-10,
+.chrome .col-lg-11,
+.chrome .col-lg-12 {
+    height: 0px;
+}
+}
+
+.chrome .owl-carousel.owl-loaded.owl-height-forced{
+height: 0px;
+}
+
+
+
+
+/* ******************** RD ***
+FOOTER: DATE HIGHLIGHT
+*********************** RD ***
+/* Text Style for day of the week highlight in footer */
+
+.today {
+  color: #F46D25!important;
+  font-weight: 900!important;
+  letter-spacing: .02em;
+/*   text-transform: uppercase!important; */
+  /* padding-top: 0px!important; */
+}
+
+/* ------------------------------------------------------------------- RND: Nav Menu: Primary click to call button*/
+
+.rd-nav-btn.btn-accent.btn-circle.btn-flat.menu-item.menu-item-type-custom.menu-item-object-custom.menu-item-67437.menu-btn-container.btn {
+  font-size: 13px;
+  font-weight: 800 !important;
+  font-family: 'SF-Pro-Display', Roboto, Sans-Serif !important;
+  letter-spacing: 0.01em;
+  text-transform: uppercase;
+  margin-top: .5em;
+  margin-bottom: .5em;
+}
+
+/* ------------------------------------------------------------------- RND: Nav Menu: Secondary text style */
+
+.menu-mini.menu-smart a {
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 800 !important;
+  font-family: 'SF-Pro-Display', Roboto, Sans-Serif !important;
+  letter-spacing: 0.01em;
+  margin-top: .5em;
+  margin-bottom: .5em;
+}
+
+/* ------------------------------------------------------------------- RND: Custom Menus in Sidebar/Footer */
+
+/*CHANGED: NEW CSS (11/26) */
+
+/* Styles custom menu in footer */
+
+.widget-container.widget_nav_menu .menu-item a:before, .widget-container.widget_custom_menu .menu-item a:before {
+  display: none!important;
+}
+
+.widget-container.widget_nav_menu li, .widget-container.widget_custom_menu li {
+  text-transform: capitalize;
+}
+
+.widget-container.widget_nav_menu li a, .widget-container.widget_custom_menu li a {
+  padding: 0px 0px 0px 0px;
+}
+
+/* ------------------------------------------------------------------- RND: Footer Styles */
+
+/*CHANGED: NEW CSS (11/26) */
+
+/*Remove padding from widget areas*/
+
+footer .widget-container {
+  margin: 0px 0px .5em 0px;
+}
+
+/*Remove padding from unordered lists*/
+
+footer .widget-container ul li {
+  padding: 0px 0px 0px 0px;
+}
+
+/*Synchronizes text sizes in footer*/
+
+.site-footer a, .site-footer p, .site-footer li, .site-footer dt, .site-footer dd, .site-footer dl, .site-footer address, .site-footer label, .site-footer small, .site-footer pre, .site-footer code, .site-footer .widget-container.widget_nav_menu li a {
+  font-size: 14px;
+
+}
+
+/*Styles Business Hours    */
+
+.rd-pull-right {
+  float: right;
+}
+
+#sun, #mon, #tue, #wed, #thu, #fri, #sat {
+  line-height: 1.75;
+  font-weight: 500;
+}
+
+/*Footer Icons*/
+
+footer .icon-box.icon-inline {
+  display: inline-table;
+  table-layout: fixed;
+  width: auto;
+  text-align: center;
+  vertical-align: bottom;
+  margin-top: 1em !important;
+  padding-left: 0;
+  padding-right: 1em;
+}
+
+/*Copyright area*/
+
+footer .footer-last .uncell>*:first-child {
+  margin-top: 0;
+  margin-bottom: 1.75em;
+}
+
+/* ========================================================================================== */
+
+/* ******************** RD ***
+MODAL: APPOINTMENT REQUEST
+*********************** RD ***
+
+/* ------------------------------------------------------------------- RND: Modal*/
+
+ /* The Modal (background) */
+.modal {
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Stay in place */
+  padding-top: 100px;
+  /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  overflow: auto;
+  /* Enable scroll if needed */
+  background-color: rgb(31, 36, 63);
+  /* Fallback color */
+  background-color: rgba(31, 36, 63, 0.9);
+  /* Black w/ opacity */
+  z-index: 1000001;
+  /* Sit on top */
+}
+
+/* Modal Content */
+
+.modal-content {
+  position: relative;
+  background-color: #fff;
+  margin: auto;
+  padding: 0;
+  border: 1px solid #888;
+  width: 75%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetop;
+  animation-duration: 0.4s
+}
+
+/* Add Animation */
+
+@-webkit-keyframes animatetop {
+  from {
+    top: -300px;
+    opacity: 0
+  }
+  to {
+    top: 0;
+    opacity: 1
+  }
+}
+
+@keyframes animatetop {
+  from {
+    top: -300px;
+    opacity: 0
+  }
+  to {
+    top: 0;
+    opacity: 1
+  }
+}
+
+/* The Close Button */
+
+.close {
+  color: #000000;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover, .close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal-header {
+  padding: 2px 16px;
+  background-color: #ffffff;
+  color: white;
+  /*padding: 20px 20px;*/
+  text-align: center;
+  /*color: #000000*/
+}
+
+.modal-content {
+  padding: 50px;
+}
+
+.modal-footer {
+  padding: 2px 16px;
+  background-color: #5cb85c;
+  color: white;
+}
+
+/* ALL Mobile, everything less than an ipad vertical*/
+@media only screen and (max-width: 767px) {
+
+  /* ------------------------------------------------------------------- RND: Modal Mobile*/
+  .modal-content {
+    padding: 20px;
+    width: 100%;
+  }
+  .modal {
+    padding-top: unset;
+  }
+
+}
